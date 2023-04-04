@@ -116,10 +116,10 @@ def response(user_response, sent_tokens):
     req_tfidf = flat[-2]
     if req_tfidf == 0:
         robo_response += "I am sorry! I don't understand you"
-        return robo_response
     else:
         robo_response += sent_tokens[idx]
-        return robo_response
+
+    return robo_response
 
 
 flag = True
